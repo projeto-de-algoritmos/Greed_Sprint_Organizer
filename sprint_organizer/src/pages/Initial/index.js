@@ -1,6 +1,6 @@
 import React from 'react'
 // import IssueForm from '../../Components/IssueForm'
-import IssueList from '../../Components/IssueList'
+import IssueList from '../../Components/IssueList/IssueList'
 
 function Initial() {
     return (

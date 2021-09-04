@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import IssueForm from './IssueForm'
+import IssueForm from '../IssueForm/IssueForm'
 import {RiCloseCircleLine} from 'react-icons/ri'
 
 function Icons({ issues, deleteIssue}) {

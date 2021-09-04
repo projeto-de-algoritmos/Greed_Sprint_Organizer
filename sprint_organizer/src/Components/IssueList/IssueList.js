@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
-import IssueForm from './IssueForm'
-import Icons from './Icons'
+import IssueForm from '../IssueForm/IssueForm'
+import Icons from '../icons/Icons'
+import Request from '../Request/Request'
 
 function IssueList() {
   const [issues, setIssues] = useState([])
   const addIssue = issue => {
     const newIssues = [issue, ...issues];
     setIssues(newIssues);
-    // console.log(issue, ...issues);
+
+    console.log(issue, ...issues);
 
   }
   const deleteIssue = id => {
@@ -24,6 +26,10 @@ function IssueList() {
       issues = {issues}
       deleteIssue = {deleteIssue}
       />
+
+      <div>
+        <Request />
+      </div>
     </div>
   )
 }

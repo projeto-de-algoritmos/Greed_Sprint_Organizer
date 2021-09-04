@@ -8,7 +8,7 @@ function IssueForm(props) {
     function handleSubmit(e) {
         e.preventDefault();    
         props.onSubmit({
-            id: {descricao},
+            id: descricao,
             descricao: descricao,
             tempo: tempo,
             peso: peso
