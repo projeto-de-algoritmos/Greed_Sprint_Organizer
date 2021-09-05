@@ -12,7 +12,7 @@ export const MainContainer = styled.main`
 export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-  grid-column: 2/-2;
+  grid-column: 1/-1;
   margin: 0 auto;
   row-gap: 3rem;
   column-gap: 3rem;

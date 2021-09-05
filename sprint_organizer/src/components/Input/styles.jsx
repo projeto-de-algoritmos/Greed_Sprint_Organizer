@@ -8,7 +8,6 @@ export const InputWrapper = styled.div`
   & span {
     font-size: 0.9rem;
     color: red;
-    font-weight: 600;
   }
 `;
 
@@ -24,7 +23,7 @@ export const Label = styled.label`
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #9b9b9b;
 `;
 
@@ -32,9 +31,9 @@ export const Input = styled.input`
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
   outline: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
   padding: 7px 0;
   background: transparent;
@@ -45,7 +44,7 @@ export const Input = styled.input`
   }
 
   &:placeholder-shown ~ ${Label} {
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: text;
     top: 20px;
   }
@@ -53,10 +52,10 @@ export const Input = styled.input`
   &:focus {
     ~ ${Label} {
       position: absolute;
-      top: 0;
+      top: -1px;
       display: block;
       transition: 0.2s;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #11998e;
       font-weight: 700;
     }

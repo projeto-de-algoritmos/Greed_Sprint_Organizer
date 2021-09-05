@@ -15,6 +15,8 @@ export const IssueItem = styled.li`
 
       &:hover {
         border: 1px solid #11998e;
+        border-image: linear-gradient(to right, #11998e, #38ef7d);
+        border-image-slice: 1;
       }
 
       span {

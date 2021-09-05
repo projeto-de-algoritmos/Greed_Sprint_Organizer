@@ -4,7 +4,10 @@ function useKnapsack(issues, tempoTotal) {
   const [selecionadas, setSelecionadas] = useState([]);
 
   const knapsack = useCallback(() => {
-    if (!issues || issues.length === 0 || !tempoTotal) return;
+    if (!issues || issues.length === 0 || !tempoTotal) {
+      setSelecionadas([]);
+      return;
+    };
     let issuesOrdenadas = [...issues];
 
     issuesOrdenadas.sort((a, b) => {
