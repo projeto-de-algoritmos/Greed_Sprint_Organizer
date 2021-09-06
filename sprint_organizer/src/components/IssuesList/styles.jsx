@@ -27,7 +27,7 @@ export const Header = styled.div`
     css`
       position: relative;
       display: grid;
-      grid-template-columns: ${!percent ? '1fr 1fr 1fr auto' : '1fr 1fr'};
+      grid-template-columns: ${!percent ? '1fr 1fr 1fr auto' : '1fr auto'};
       width: 100%;
       color: #666;
       margin-top: 32px;
@@ -44,5 +44,11 @@ export const Header = styled.div`
         display: inline-grid;
         text-align: center;
       }
+
+      ${percent && css`
+        & span:nth-child(3) {
+          margin-right: 1.75rem;
+        }
+      `}
     `}
 `;

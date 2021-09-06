@@ -4,7 +4,7 @@ export const IssueItem = styled.li`
   ${({ percent }) =>
     css`
       display: grid;
-      grid-template-columns: ${!percent ? '1fr 1fr 1fr auto' : '1fr 1fr'};
+      grid-template-columns: ${!percent ? '1fr 1fr 1fr auto' : '1fr auto'};
       min-width: ${!percent ? '350px' : '100px'};
       column-gap: 1rem;
       padding: 1rem;

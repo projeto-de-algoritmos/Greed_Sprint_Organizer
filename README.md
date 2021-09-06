@@ -14,7 +14,11 @@
 Sistema para organizar issues de uma sprint otimizando as escolhas por provável tempo de conclusão.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+![inicio](sprint_organizer/src/images/01.png)
+![issues](sprint_organizer/src/images/02.png)
+![issues2](sprint_organizer/src/images/03.png)
+![Backlog](sprint_organizer/src/images/04.png)
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
