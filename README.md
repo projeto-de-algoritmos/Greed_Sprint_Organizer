@@ -18,14 +18,24 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
-**Framework**: NextJs<br>
+**Framework**: React JS<br>
 
 
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Para rodar o projeto, você precisa seguir as seguintes instruções:
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+1. Clonar o repositório
+```
+git clone https://github.com/projeto-de-algoritmos/Greed_Sprint_Organizer.git
+```
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+2. Entrar na pasta sprint_organizer e instalar as dependências por meio de:
 
+```
+yarn install
+```
+
+3. Inicializar a aplicação
+
+```
+yarn start
+```
