@@ -34,7 +34,7 @@ export const Header = styled.div`
 
       & span:first-child {
         position: absolute;
-        top: -24px;
+        top: -26px;
         left: 50%;
         transform: translate(-50%, 0);
         font-weight: 600;

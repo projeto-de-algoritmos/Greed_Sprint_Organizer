@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const InputWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
 
   & span {
+    position: absolute;
+    top: calc(100%);
     font-size: 0.9rem;
     color: red;
   }
@@ -14,7 +17,6 @@ export const InputWrapper = styled.div`
 export const InputGroup = styled.div`
   position: relative;
   padding: 15px 0 0;
-  margin-top: 10px;
   width: fit-content;
 `;
 
@@ -34,7 +36,7 @@ export const Input = styled.input`
   border-bottom: 1px solid #9b9b9b;
   outline: 0;
   font-size: 1rem;
-  color: #333;
+  color: #222;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
@@ -50,20 +52,21 @@ export const Input = styled.input`
   }
 
   &:focus {
+    padding-bottom: 5px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+
     ~ ${Label} {
       position: absolute;
-      top: -1px;
+      top: 0px;
       display: block;
       transition: 0.2s;
       font-size: 0.85rem;
       color: #11998e;
       font-weight: 700;
     }
-    padding-bottom: 6px;
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #11998e, #38ef7d);
-    border-image-slice: 1;
   }
 
   &:required,

@@ -18,11 +18,11 @@ export const Button = styled.button`
   border: none;
 
   &:hover {
-    box-shadow: 0 20px 25px -15px rgb(0 0 0 / 25%);
+    /* box-shadow: 0 20px 25px -15px rgb(0 0 0 / 25%); */
   }
 
   &:active {
-    opacity: 0.85;
+    opacity: 0.8;
   }
 
   &:after {
@@ -34,9 +34,7 @@ export const Button = styled.button`
     right: 0;
     bottom: 0;
     border: 3px solid #11998e;
-    -webkit-transition: 0.25s;
-    -o-transition: 0.25s;
-    transition: 0.25s;
+    transition: all 0.2s;
 
     transition-timing-function: cubic-bezier(0.69, 0, 0, 1) !important;
     animation-timing-function: cubic-bezier(0.69, 0, 0, 1) !important;
@@ -44,10 +42,10 @@ export const Button = styled.button`
 
   &:hover {
     &:after {
-      top: -5.5px;
-      left: -5.5px;
-      right: -5.5px;
-      bottom: -5.5px;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
       border-image: linear-gradient(to right, #11998e, #38ef7d);
       border-image-slice: 1;
     }

@@ -25,7 +25,7 @@ export const Content = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
 
   button {
     margin: 1rem 0 2rem;

@@ -37,7 +37,7 @@ function App() {
             label="Issue"
             type="text"
             error={errors.issue}
-            autocomplete="off"
+            autoComplete="off"
           />
 
           <Input
